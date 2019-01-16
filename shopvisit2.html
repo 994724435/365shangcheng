@@ -12,6 +12,17 @@
         <link rel="icon" type="image/png" href="/theme/default/images/favicon.png">
 		<link href="css/amazeui.min.css" rel="stylesheet" type="text/css" />
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<style>
+			.am-slider-default .am-control-nav{ text-align: center;}
+			.am-slider-default .am-control-nav li a.am-active{ background: #fdb325;}
+			.am-slider-default .am-control-nav li a{ border: 0; width: 10px; height: 10px;}
+			.imbuy{width: 70%;
+				    margin: 0 auto;
+				    border-radius: 15px;
+				    display: block;
+				    padding: 5px 0;}
+		</style>
 	</head>
 	<body style="background: #f6f6f6;">
 		<header data-am-widget="header" class="am-header am-header-default sq-head ">
@@ -72,105 +83,63 @@
 			</li>
 		</ul>
 	    </div>
-	    <div class="user-list">
-	    	 <ul data-am-widget="gallery" class="am-gallery pro-list am-avg-sm-3 am-avg-md-3 am-avg-lg-4 am-gallery-default"  >
-			      <li>
-			        <div class="am-gallery-item">
-			            <a href="detail.html" class="">
-			              <img src=" images/test.png" />
-			                <h3 class="am-gallery-title">猪骨头棒新鲜生鲜肉制品猪大骨头筒骨熬汤佳品500g</h3>
-			                <div class="am-gallery-desc">￥52</div>
-			            </a>
-			        </div>
-			      </li>
-			      <li>
-			        <div class="am-gallery-item">
-			            <a href="detail.html" class="">
-			              <img src=" images/test1.png" />
-			                <h3 class="am-gallery-title">冻品批发大江鸡腿 冷鲜鸡腿放心食材1kg 冷冻食材</h3>
-			                <div class="am-gallery-desc">￥39</div>
-			            </a>
-			        </div>
-			      </li>
-			        <li>
-			        <div class="am-gallery-item">
-			            <a href="detail.html" class="">
-			              <img src=" images/test2.png" />
-			                <h3 class="am-gallery-title">法国加力果12个装 进口新鲜水果 嘎啦苹果 包邮</h3>
-			                <div class="am-gallery-desc">￥45.8</div>
-			            </a>
-			        </div>
-			      </li>
 
+	    <div class="am-tabs-bd">
+		    <div class="am-tab-panel am-fade am-in am-active detail " id="tab1" >
+		            <p>产地: 中国大陆</p>
+                    <p>功效: 瘦身,美容,提神,抗氧化,保健,降三高</p>
+                    <p>保质期: >2年</p>
+                    <img src="images/test11.png" />
+		    </div>
+		    <div class="am-tab-panel am-fade detail " id="tab2">
+		         <div class="comment">
+		         	<span>好评：</span>
+		         	<div class="com-good"></div>
+		         	<span>100%</span>
+		         </div>
+		         <div class="comment">
+		         	<span>中评：</span>
+		         	<div class="com-bad"></div>
+		         	<span>0%</span>
+		         </div>
+		         <div class="comment">
+		         	<span>差评：</span>
+		         	<div class="com-bad"></div>
+		         	<span>0%</span>
+		         </div>
+		         <ul class="comment-list">
+		           <li><a href="">全部</a></li>
+		           <li><a href="">好评（20）</a></li>
+		           <li><a href="">中评（5）</a></li>
+		           <li><a href="">差评（0）</a></li>
+		         </ul>
+		         <ul class="comment-pic">
+		         	<li>
+		         		<div class="tit">
+		         			<img src="images/tx.png" class="tx" />
+		         			<span>songke2014</span>
+		         			<i> [2016-01-01]</i>
+		         		</div>
+		         		<div class="comment-con">
+		         			买了些给家人，都说不错！
+		         		</div>
+		         	</li>
+		         	<li>
+		         		<div class="tit">
+		         			<img src="images/tx.png" class="tx" />
+		         			<span>songke2014</span>
+		         			<i> [2016-01-01]</i>
+		         		</div>
+		         		<div class="comment-con">
+		         			买了些给家人，都说不错！
+		         		</div>
+		         	</li>
+		         </ul>
+		    </div>
 
-			  </ul>	
-		  	<!-- <div class="u-list-main">
-		  		<img src="images/order-pic.png" width="27" />
-		  		<span>我的订单</span>
-		  		<a href="shoporder.html">查看全部订单></a>
-		  	</div>
-		    <ul class="user-nav">
-		    	<li><a href="allorder.html"> <img src="images/1-icon.png"> <p>待付款</p></a></li>
-		    	<li><a href="allorder.html"> <img src="images/1-icon2.png"> <p>待发货</p></a></li>
-		    	<li><a href="allorder.html"> <img src="images/1-icon1.png"> <p>已发货</p></a></li>
-		    	<li><a href="allorder.html"> <img src="images/1-icon3.png"> <p>已确认</p></a></li>
-		    </ul>
-		    <div class="u-list-main">
-		  		<img src="images/order-my.png" width="27" />
-		  		<span>店铺信息</span>
-		  	</div>
-		    <ul class="user-nav">
-		    	<li><a href="infor.html"> <img src="images/1-icon4.png"> <p>门店信息</p></a></li>
-		    	<li><a href="productlist.html"> <img src="images/1-icon5.png"> <p>商品列表</p></a></li>
-		    	<li><a href="integral.html"> <img src="images/1-icon7.png"> <p>我的钱包</p></a></li>
-		    </ul>
-
-		    <div class="u-list-main">
-		  		<img src="images/moneytele.png" width="27" />
-		  		<span>其他管理</span>
-		  	</div>
-		    <ul class="user-nav">
-		    	<li><a href="infor.html"> <img src="images/1-icon4.png"> <p>商品评论</p></a></li>
-		    	<li><a href="gladdress.html"> <img src="images/1-icon5.png"> <p>物流查询</p></a></li>
-		    </ul> -->
-	    </div>
+		  </div>
 
 	  
-	    <!--导航-->
- 	<!-- <ul class="sq-nav" style=" background: #fff; margin-top: 1rem; border-top: 1px solid #ddd;  border-bottom: 1px solid #ddd;">
-      <li>
-        <div class="am-gallery-item">
-            <a href="records.html" class="">
-              <img src="images/icon4.png" />
-              <p>余额明细</p>
-            </a>
-        </div>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-            <a href="mywhite.html" class="">
-              <img src="images/icon5.png" />
-              <p>店铺评论</p>
-            </a>
-        </div>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-            <a href="memberreserve.html" class="">
-              <img src="images/icon2.png" />
-              <p>我的店铺</p>
-            </a>
-        </div>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-            <a href="" class="">
-              <img src="images/icon8.png" />
-              <p>安全退出</p>
-            </a>
-        </div>
-      </li>
-      </ul> -->
       </div>
        <!--底部-->
  <div style="height: 55px;"></div>
